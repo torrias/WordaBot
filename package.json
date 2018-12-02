@@ -1,0 +1,23 @@
+{
+  "name": "wordabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "telegraf": "^3.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torrias/WordaBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torrias/WordaBot/issues"
+  },
+  "homepage": "https://github.com/torrias/WordaBot#readme"
+}
