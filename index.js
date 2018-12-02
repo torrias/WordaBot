@@ -9,6 +9,10 @@ bot.use((ctx, next) => {
     console.log('Response time %sms', ms)
   })
 })
-
-bot.on('text', (ctx) => ctx.reply('Hello World'))
+var space = ' '
+bot.on('text', (ctx) => {
+    var temp_text = ctx.message.from.username
+    var splits = temp_text.split(space)
+    ctx.reply('Занесено ' + (splits.length/2))
+})
 bot.startPolling()
