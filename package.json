@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "telegraf": "^3.25.0"
+    "telegraf": "^3.25.5"
   },
   "devDependencies": {},
   "scripts": {
