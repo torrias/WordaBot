@@ -6,7 +6,7 @@ bot.start((ctx) => {
   return ctx.reply('Добро пожаловать!');
 }); 
 //Добавление нового слова в словарь
-const session = require("telegraf/session");
+/*const session = require("telegraf/session");
 const Stage = require("telegraf/stage");
 const WizardScene = require("telegraf/scenes/wizard");
 var newword = new Array()
@@ -30,11 +30,14 @@ const create = new WizardScene(
 // Создаем менеджера сцен
 const stage = new Stage();
 
-// Регистрируем сцену создания матча
 stage.register(create);
 
 bot.use(session());
-bot.use(stage.middleware());
-bot.command("addword", (ctx) => ctx.scene.enter("addword"));
-console.log(newword);
+bot.use(stage.middleware());*/
+var newword = new Array()
+bot.command("addword", (ctx) => {
+  ctx.reply('Введите слово для заучивания:')
+  newword[1] = ctx.message.text;
+  console.log(newword[1]);
+});
 bot.startPolling();
