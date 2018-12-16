@@ -2,22 +2,22 @@
   "name": "wordabot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/node": "^10.12.15",
+    "dotenv": "^6.2.0",
     "telegraf": "^3.25.5"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js"
+    "start": "node dist/index.js"
   },
   "engines": {
     "node": "10.13.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/torrias/WordaBot.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/torrias/WordaBot.git",
+  "author": "torrias",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/torrias/WordaBot/issues"
